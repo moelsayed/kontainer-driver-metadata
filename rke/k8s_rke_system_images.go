@@ -1,6 +1,6 @@
 package rke
 
-import "github.com/rancher/types/apis/management.cattle.io/v3"
+import v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 
 func loadK8sRKESystemImages() map[string]v3.RKESystemImages {
 	return map[string]v3.RKESystemImages{
@@ -748,10 +748,10 @@ func loadK8sRKESystemImages() map[string]v3.RKESystemImages {
 		"v1.12.9-rancher1-1": {
 			Etcd:                      m("quay.io/coreos/etcd:v3.2.24-rancher1"),
 			Kubernetes:                m("rancher/hyperkube:v1.12.9-rancher1"),
-			Alpine:                    m("rancher/rke-tools:v0.1.34"),
-			NginxProxy:                m("rancher/rke-tools:v0.1.34"),
-			CertDownloader:            m("rancher/rke-tools:v0.1.34"),
-			KubernetesServicesSidecar: m("rancher/rke-tools:v0.1.34"),
+			Alpine:                    m("melsayed/rke-tools:v0.1.35"),
+			NginxProxy:                m("melsayed/rke-tools:v0.1.35"),
+			CertDownloader:            m("melsayed/rke-tools:v0.1.35"),
+			KubernetesServicesSidecar: m("melsayed/rke-tools:v0.1.35"),
 			KubeDNS:                   m("gcr.io/google_containers/k8s-dns-kube-dns:1.14.13"),
 			DNSmasq:                   m("gcr.io/google_containers/k8s-dns-dnsmasq-nanny:1.14.13"),
 			KubeDNSSidecar:            m("gcr.io/google_containers/k8s-dns-sidecar:1.14.13"),
@@ -890,10 +890,10 @@ func loadK8sRKESystemImages() map[string]v3.RKESystemImages {
 		"v1.13.7-rancher1-1": {
 			Etcd:                      m("quay.io/coreos/etcd:v3.2.24-rancher1"),
 			Kubernetes:                m("rancher/hyperkube:v1.13.7-rancher1"),
-			Alpine:                    m("rancher/rke-tools:v0.1.34"),
-			NginxProxy:                m("rancher/rke-tools:v0.1.34"),
-			CertDownloader:            m("rancher/rke-tools:v0.1.34"),
-			KubernetesServicesSidecar: m("rancher/rke-tools:v0.1.34"),
+			Alpine:                    m("melsayed/rke-tools:v0.1.35"),
+			NginxProxy:                m("melsayed/rke-tools:v0.1.35"),
+			CertDownloader:            m("melsayed/rke-tools:v0.1.35"),
+			KubernetesServicesSidecar: m("melsayed/rke-tools:v0.1.35"),
 			KubeDNS:                   m("gcr.io/google_containers/k8s-dns-kube-dns:1.15.0"),
 			DNSmasq:                   m("gcr.io/google_containers/k8s-dns-dnsmasq-nanny:1.15.0"),
 			KubeDNSSidecar:            m("gcr.io/google_containers/k8s-dns-sidecar:1.15.0"),
@@ -976,10 +976,10 @@ func loadK8sRKESystemImages() map[string]v3.RKESystemImages {
 		"v1.14.3-rancher1-1": {
 			Etcd:                      m("quay.io/coreos/etcd:v3.3.10-rancher1"),
 			Kubernetes:                m("rancher/hyperkube:v1.14.3-rancher1"),
-			Alpine:                    m("rancher/rke-tools:v0.1.34"),
-			NginxProxy:                m("rancher/rke-tools:v0.1.34"),
-			CertDownloader:            m("rancher/rke-tools:v0.1.34"),
-			KubernetesServicesSidecar: m("rancher/rke-tools:v0.1.34"),
+			Alpine:                    m("melsayed/rke-tools:v0.1.35"),
+			NginxProxy:                m("melsayed/rke-tools:v0.1.35"),
+			CertDownloader:            m("melsayed/rke-tools:v0.1.35"),
+			KubernetesServicesSidecar: m("melsayed/rke-tools:v0.1.35"),
 			KubeDNS:                   m("gcr.io/google_containers/k8s-dns-kube-dns:1.15.0"),
 			DNSmasq:                   m("gcr.io/google_containers/k8s-dns-dnsmasq-nanny:1.15.0"),
 			KubeDNSSidecar:            m("gcr.io/google_containers/k8s-dns-sidecar:1.15.0"),
@@ -1005,10 +1005,10 @@ func loadK8sRKESystemImages() map[string]v3.RKESystemImages {
 		"v1.15.0-rancher1-1": {
 			Etcd:                      m("quay.io/coreos/etcd:v3.3.10-rancher1"),
 			Kubernetes:                m("rancher/hyperkube:v1.15.0-rancher1"),
-			Alpine:                    m("rancher/rke-tools:v0.1.34"),
-			NginxProxy:                m("rancher/rke-tools:v0.1.34"),
-			CertDownloader:            m("rancher/rke-tools:v0.1.34"),
-			KubernetesServicesSidecar: m("rancher/rke-tools:v0.1.34"),
+			Alpine:                    m("melsayed/rke-tools:v0.1.35"),
+			NginxProxy:                m("melsayed/rke-tools:v0.1.35"),
+			CertDownloader:            m("melsayed/rke-tools:v0.1.35"),
+			KubernetesServicesSidecar: m("melsayed/rke-tools:v0.1.35"),
 			KubeDNS:                   m("gcr.io/google_containers/k8s-dns-kube-dns:1.15.0"),
 			DNSmasq:                   m("gcr.io/google_containers/k8s-dns-dnsmasq-nanny:1.15.0"),
 			KubeDNSSidecar:            m("gcr.io/google_containers/k8s-dns-sidecar:1.15.0"),
